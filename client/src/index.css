@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+.history {
+  position: relative;
+}
+
+.full-history {
+  border: 1px solid black;
+  width: 500px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: white;
+}
