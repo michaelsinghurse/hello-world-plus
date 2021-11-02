@@ -1,0 +1,6 @@
+#!/bin/bash
+
+dropdb hello-world-plus
+createdb hello-world-plus
+psql -d hello-world-plus < schema.sql
+psql -d hello-world-plus < seed-db.sql
