@@ -8,6 +8,7 @@ const uuid = require('uuid').v4;
 
 const { isValidName, normalizeName } = require('./lib/utils.js');
 const {
+  deleteHistory,
   getHistoryData,
   getHistoryDataForName,
   getNameData,
@@ -120,6 +121,16 @@ app.post('/session/destroy', async (req, res) => {
 
     res.redirect('/user');
   });
+});
+
+app.post('/history/destroy', async (req, res) => {
+  const success = await deleteHistory();
+
+  if (success) {
+    res.status(200).end();
+  } else {
+    res.status(500).end();
+  }
 });
 
 // Send all other get requests to the index page

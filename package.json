@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm install && npm run build",
     "dev": "concurrently \"npx nodemon index.js\" \"cd client && npm start\"",
-    "start": "node index.js"
+    "start": "node index.js",
+    "delete-history": "node ./lib/deleteHistory.js"
   },
   "author": "Michael Singhurse",
   "license": "ISC",

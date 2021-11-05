@@ -35,7 +35,7 @@ users to control how many names to display
 - [X] Sessions. Store the last name a user submitted so they will
 be greeted by name if they return. Display session ID on page. Provide
 a way for user to destroy the session.
-- [ ] Clearing stats. Provide a way to clear history from the DB both
+- [X] Clearing stats. Provide a way to clear history from the DB both
 from the web interface and the command line.
 
 ## Other

@@ -54,6 +54,20 @@ const History = () => {
       });
   };
 
+  const deleteHistory = () => {
+    fetch('/history/destroy', { method: 'POST' })
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        updateTable();
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  };
+
   const allNamesRows = allNamesData.map((row, idx) => {
     return (
       <tr key={idx}>
@@ -93,6 +107,9 @@ const History = () => {
               <option value="50">50</option>
             </select>
           </label>
+          <div>
+            <button type="button" onClick={deleteHistory}>Clear History</button>
+          </div>
         </>
       }
       {!loading && !!allNamesData.length &&
