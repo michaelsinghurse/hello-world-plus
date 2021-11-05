@@ -32,13 +32,12 @@ link to learn more. Store meaning in db. Provide mode to turn off db
 storing of name meaning for dev purposes.
 - [X] History area of page that displays last 10 names submitted. Allow
 users to control how many names to display
-- [ ] Sessions. Store the last name a user submitted so they will
+- [X] Sessions. Store the last name a user submitted so they will
 be greeted by name if they return. Display session ID on page. Provide
 a way for user to destroy the session.
-- [ ] Clearning stats. Provide a way to clear history from the DB both
+- [ ] Clearing stats. Provide a way to clear history from the DB both
 from the web interface and the command line.
-- [ ] Testing. Test coverage report as a bonus.
 
 ## Other
 - Avoid obvious security mistakes
-
+- Testing. Test coverage report as a bonus.

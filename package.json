@@ -20,7 +20,8 @@
     "express-session": "^1.17.2",
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.6",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "concurrently": "^6.3.0",
